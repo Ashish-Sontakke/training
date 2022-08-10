@@ -1,0 +1,25 @@
+{
+  "name": "session7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Ashish-Sontakke@github.com/Ashish-Sontakke/training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashish-Sontakke/training/issues"
+  },
+  "homepage": "https://github.com/Ashish-Sontakke/training#readme",
+  "dependencies": {
+    "web3": "^1.7.5"
+  }
+}
