@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
-
 contract MyToken {
     address owner;
 
     mapping(address => uint256) balances;
+
     mapping(address => mapping(address => uint256)) isAllowed;
 
     event Transfer(address owner, address to, uint256 amount);
@@ -19,6 +19,15 @@ contract MyToken {
         owner = msg.sender;
         name = "MyToken";
         balances[msg.sender] = totalSupply;
+    }
+
+    // account1 => account2
+    function sendTO(address to) public payable {
+        payable(to).transfer(msg.value);
+    }
+
+    function alwaysFails() public pure {
+        require(false, "ERR MSG");
     }
 
     function decimals() public pure returns (uint8) {
